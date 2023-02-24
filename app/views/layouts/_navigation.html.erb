@@ -18,7 +18,7 @@
             <% if logged_in? %>
               <%= link_to "Create new article", new_article_path, class: "dropdown-item" %>
             <% end %> 
-            <%= link_to "View articles", categories_path, class: "dropdown-item" %>
+            <%= link_to "View articles", articles_path, class: "dropdown-item" %>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -29,7 +29,7 @@
             <% if logged_in? && current_user.admin? %>
               <%= link_to "Create new category", new_category_path, class: "dropdown-item" %>
             <% end %> 
-            <%= link_to "View categories", articles_path, class: "dropdown-item" %>
+            <%= link_to "View categories", categories_path, class: "dropdown-item" %>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
